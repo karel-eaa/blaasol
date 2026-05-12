@@ -1,16 +1,36 @@
-# React + Vite
+## `main.jsx` — App Entry Point & Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This file is the **starting point of the app**. It launches everything and decides which page to show based on the URL in the browser.
 
-Currently, two official plugins are available:
+***
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What It Does
 
-## React Compiler
+- Loads the app into the webpage
+- Uses `StrictMode` to help catch bugs during development
+- Shows the right page depending on what URL the user visits
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+***
 
-## Expanding the ESLint configuration
+## Pages & Their URLs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| URL | Page Shown |
+|---|---|
+| `/` | Home |
+| `/experience` | Experience |
+| `/volunteer` | Volunteer |
+| `/sponsors` | Sponsors |
+| `/tickets` | Tickets |
+| `/artists` | All Artists |
+| `/artists/:name` | Single Artist page (changes based on the artist) |
+| `/good-acts` | Good Acts |
+| `/gallery` | Gallery |
+| `/shop` | Shop |
+| `/contact` | Contact |
+
+***
+
+## Notes
+
+- All pages live in the `./views/` folder.
+- `index.css` applies the global styles to the whole app.
