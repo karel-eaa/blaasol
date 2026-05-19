@@ -19,7 +19,7 @@ import { Volunteer } from './views/Volunteer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/blaasol'>
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/experience' element={ <Experience /> } />
