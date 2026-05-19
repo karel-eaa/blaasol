@@ -3,7 +3,7 @@ import { Section } from "./Section";
 export function Footer() {
     return (
         <Section bgImg={"bg-footer.png"} className={"justify-end"} >
-            <div className="flex flex-col md:flex-row justify-between">
+            <div className="flex flex-col md:flex-row justify-between w-full">
                 <div className="flex flex-col gap-[9px] px-[127px] py-[91px]">
                     <a href="" className="font-bowlby text-button-md text-[#0393CA]">Kontakt</a>
                     <a href="" className="font-bowlby text-button-md text-[#0393CA]">FAQ</a>
