@@ -1,17 +1,16 @@
-import { assetUrl } from "../utils/assetUrl";
+import { twMerge } from "tailwind-merge"
+import { assetUrl } from "../utils/assetUrl"
 
-export function Section({ bgImg = null, children, className }) {
+export function Section({ bgImg = null, children, className, classNameChildren }) {
     return (
-        <div className={`relative flex flex-col items-center min-h-screen ${className}`}>
-            {/* Background layer */}
+        <div className={twMerge(`relative flex flex-col items-center min-h-screen`, className)}>
             {bgImg && (
                 <div
                     style={{ backgroundImage: `url(${assetUrl(bgImg)})` }}
                     className="absolute inset-0 bg-cover bg-top bg-no-repeat [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_60%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_60%,transparent_100%)]"
                 />
             )}
-            {/* Content layer (mask does not apply) */}
-            <div className="relative flex flex-col items-center w-full px-4 md:px-0">
+            <div className={twMerge(`relative flex flex-col items-center w-full px-4 md:px-0`, classNameChildren)}>
                 {children}
             </div>
         </div>

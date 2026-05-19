@@ -6,7 +6,9 @@
 // 60px -> text-[clamp(36px,4.17vw,81px)]
 
 import { ButtonLg } from "../components/ButtonLg";
+import { Footer } from "../components/Footer";
 import { GalleryContainer } from "../components/GalleryContainer";
+import { NavBar } from "../components/NavBar";
 import { Section } from "../components/Section";
 import { SectionDescription } from "../components/SectionDescription";
 import { SectionTitle } from "../components/SectionTitle";
@@ -16,14 +18,7 @@ export function Home() {
     return (
         <>
             <div className="flex flex-col min-h-screen bg-[url('/blaasol/bg-image-landing.png')] bg-cover bg-top bg-no-repeat">
-                {/* nav-bar */}
-                <div className="flex flex-col gap-12 md:gap-0 md:flex-row justify-between items-center px-[60px] pt-[40px]">
-                    <img src="./nav.png" className="max-h-[100px] w-auto" />
-                    <div className="flex gap-[50px]">
-                        <a className="bg-brand-red text-brand-light font-bowlby py-[9px] px-[18.5px] rounded-[15px] cursor-pointer text-[25px]">Buy tickets</a>
-                        <img src="./menu-icon.svg" alt="" />
-                    </div>
-                </div>
+                <NavBar />
 
                 {/* hero text — takes remaining space and centers content */}
                 <div className="flex-1 flex-col flex md:flex-row md:justify-between justify-center gap-12 items-center px-[60px]">
@@ -112,21 +107,7 @@ export function Home() {
             <div className="flex">
                 <img className="h-[1021px] mx-auto mb-[-400px]" src="./footer-sun.png" alt="" />
             </div>
-            <Section bgImg={"bg-footer.png"} className={"justify-end"} >
-                <div className="flex flex-col md:flex-row justify-between">
-                    <div className="flex flex-col gap-[9px] px-[127px] py-[91px]">
-                        <a href="" className="font-bowlby text-button-md text-[#0393CA]">Kontakt</a>
-                        <a href="" className="font-bowlby text-button-md text-[#0393CA]">FAQ</a>
-                        <a href="" className="font-bowlby text-button-md text-[#0393CA]">Partner</a>
-                    </div>
-                    <div className="flex items-end gap-[9px] px-[127px] py-[91px] gap-[46px]">
-                        <div className="flex items-center"><img className="h-6 md:h-12" src="./instagram.png" alt="" /></div>
-                        <div className="flex items-center"><img className="h-6 md:h-12" src="./facebook.png" alt="" /></div>
-                        <div className="flex items-center"><img className="h-6 md:h-12" src="./youtube.png" alt="" /></div>
-                        <div className="flex items-center"><img className="h-6 md:h-12" src="./spotify.png" alt="" /></div>
-                    </div>
-                </div>
-            </Section>
+            <Footer />
         </>
     );
 }
