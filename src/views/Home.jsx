@@ -57,7 +57,7 @@ export function Home() {
                 </div>
             </div>
             {/* ON SITE HELP section */}
-            <Section bgImg={"bg-sun.png"}>
+            <Section bgImg={"bg-sun.png"} className={"min-h-fit"}>
                 <Stack className="pt-section-top" gap="gap-section-gap">
                     <SectionTitle text="ON SITE HELP" />
                     <SectionDescription text="Arrived at the festival? Check out all of the activities you can<br /> engage with at the festival. " />
