@@ -15,12 +15,12 @@ import { Stack } from "../components/Stack";
 export function Home() {
     return (
         <>
-            <div className="flex flex-col min-h-screen bg-[url('./bg-image-landing.png')] bg-cover bg-top bg-no-repeat">
+            <div className="flex flex-col min-h-screen bg-[url('/blaasol/bg-image-landing.png')] bg-cover bg-top bg-no-repeat">
                 {/* nav-bar */}
                 <div className="flex flex-col gap-12 md:gap-0 md:flex-row justify-between items-center px-[60px] pt-[40px]">
                     <img src="./nav.png" className="max-h-[100px] w-auto" />
                     <div className="flex gap-[50px]">
-                        <a className="bg-[#F45348] text-[#EDF5FC] font-bowlby py-[9px] px-[18.5px] rounded-[15px] cursor-pointer text-[25px]">Buy tickets</a>
+                        <a className="bg-brand-red text-brand-light font-bowlby py-[9px] px-[18.5px] rounded-[15px] cursor-pointer text-[25px]">Buy tickets</a>
                         <img src="./menu-icon.svg" alt="" />
                     </div>
                 </div>
@@ -28,35 +28,35 @@ export function Home() {
                 {/* hero text — takes remaining space and centers content */}
                 <div className="flex-1 flex-col flex md:flex-row md:justify-between justify-center gap-12 items-center px-[60px]">
                     <div>
-                        <h1 className="text-[#EDF5FC] font-bowlby text-center">
+                        <h1 className="text-brand-light font-bowlby text-center">
                             <span className="text-description-sm">Electronic, pop, Danish rock</span><br />
                             <span className="text-heading">6th of June '26</span>
                         </h1>
                     </div>
                     <div className="flex flex-col gap-[39px]">
-                        <h2 className="text-[#EDF5FC] font-bowlby text-left font-[400] leading-[normal] hidden md:block">
+                        <h2 className="text-brand-light font-bowlby text-left font-[400] leading-[normal] hidden md:block">
                             <span className="text-heading">benjamin hav & familien<br />
                                 zar paulo ◆ gnags ◆<br />
                                 saveus ◆ infernal
                             </span>
                         </h2>
-                        <h2 className="text-[#EDF5FC] font-bowlby text-left font-[400] leading-[normal] md:hidden">
+                        <h2 className="text-brand-light font-bowlby text-left font-[400] leading-[normal] md:hidden">
                             <span className="text-heading">benjamin hav & familien
                                 zar paulo ◆ gnags ◆
                                 saveus ◆ infernal
                             </span>
                         </h2>
-                        <a className="bg-[#F45348] text-[#EDF5FC] font-bowlby py-[10px] px-[31.5px] rounded-[15px] cursor-pointer text-button-md w-fit mx-auto md:mx-0">Discover our line-up</a>
+                        <a className="bg-brand-red text-brand-light font-bowlby py-[10px] px-[31.5px] rounded-[15px] cursor-pointer text-button-md w-fit mx-auto md:mx-0">Discover our line-up</a>
                     </div>
                 </div>
             </div>
             {/* slider with names */}
-            <div className="w-full h-[93px] bg-[#0393CA] mt-[31px] flex items-center overflow-hidden">
+            <div className="w-full h-[93px] bg-brand-blue mt-[31px] flex items-center overflow-hidden">
                 <div className="flex whitespace-nowrap animate-marquee">
-                    <p className="font-bowlby text-[#EDF5FC] text-description-md pr-[60px]">
+                    <p className="font-bowlby text-brand-light text-description-md pr-[60px]">
                         Saveus ◆ Infernal ◆ Benjamin Hav ◆ Zar Paulo ◆ Lars Lilhlt Band ◆ Downtown July ◆ Gnags ◆ Rune Rask & Hampenberg ◆ Specktors ◆ Bonad ◆ Karoline Mousing ◆ Elakelaiset ◆ Anastasia ◆ Marie Frank ◆
                     </p>
-                    <p className="font-bowlby text-[#EDF5FC] text-description-md pr-[60px]" aria-hidden="true">
+                    <p className="font-bowlby text-brand-light text-description-md pr-[60px]" aria-hidden="true">
                         Saveus ◆ Infernal ◆ Benjamin Hav ◆ Zar Paulo ◆ Lars Lilhlt Band ◆ Downtown July ◆ Gnags ◆ Rune Rask & Hampenberg ◆ Specktors ◆ Bonad ◆ Karoline Mousing ◆ Elakelaiset ◆ Anastasia ◆ Marie Frank ◆
                     </p>
                 </div>
