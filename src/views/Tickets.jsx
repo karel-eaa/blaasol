@@ -10,7 +10,7 @@ export function Tickets() {
     return (<>
         <Section bgImg={"bg-sun.png"} classNameChildren={"items-start"} className={"min-h-fit"}>
             <div className="w-full">
-                <NavBar blue={true} />
+                <NavBar blue={true} buyTicketsButton={false} />
             </div>
             <Stack className="pt-section-top mx-12 mb-12 items-start md:mx-32" gap="gap-section-gap">
                 <Stack className="items-start">

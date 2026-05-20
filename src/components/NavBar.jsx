@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import { assetUrl } from "../utils/assetUrl";
 
-export function NavBar({ blue = false }) {
+export function NavBar({ blue = false, buyTicketsButton = true }) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
@@ -10,7 +10,7 @@ export function NavBar({ blue = false }) {
             <div className="flex flex-col gap-12 md:gap-0 md:flex-row justify-between items-center px-[60px] pt-[40px]">
                 <NavLink to={"/"}><img src={assetUrl(blue ? "nav-blue.png" : "nav.png")} className="max-h-[100px] w-auto" /></NavLink>
                 <div className="flex gap-[50px] items-center relative">
-                    {!blue && (
+                    {buyTicketsButton && (
                         <NavLink to={"/tickets"} className="bg-brand-red text-brand-light font-bowlby py-[9px] px-[18.5px] cursor-pointer text-base">
                             Buy tickets
                         </NavLink>
