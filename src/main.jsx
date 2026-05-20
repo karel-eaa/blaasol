@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
 // Import of views
@@ -27,7 +26,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/sponsors' element={ <Sponsors /> } />
         <Route path='/tickets' element={ <Tickets /> } />
         <Route path='/artists' element={ <Artists /> } />
-        <Route path='/artists/:name' element={ <Artist /> } />
+        <Route path='/artists/:id' element={ <Artist /> } />
         <Route path='/good-acts' element={ <GoodActs /> } />
         <Route path='/gallery' element={ <Gallery /> } />
         <Route path='/shop' element={ <Shop /> } />
