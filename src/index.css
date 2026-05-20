@@ -20,6 +20,11 @@
   --text-heading:        clamp(29px, 3.33vw, 65px);  /* 48px Figma */
   --text-section-title:  clamp(34px, 3.89vw, 76px);  /* 56px Figma */
 
+  /* General-purpose font sizes */
+  --text-sm:   clamp(16px, 1.11vw, 22px);  /* Figma 16px — floor at 16px */
+  --text-base: clamp(16px, 1.67vw, 34px);  /* Figma 24px — floor at 16px */
+  --text-lg:   clamp(19px, 2.22vw, 45px);  /* Figma 32px */
+
   /* Spacing */
   --spacing-section-top: 117px;
   --spacing-section-gap: 90px;

@@ -4,149 +4,37 @@ import { Section } from "../components/Section";
 import { SectionDescription } from "../components/SectionDescription";
 import { SectionTitle } from "../components/SectionTitle";
 import { Stack } from "../components/Stack";
+import { TicketCard } from "../components/TicketCard";
 
 export function Tickets() {
     return (<>
-        <NavBar />
         <Section bgImg={"bg-sun.png"} classNameChildren={"items-start"} className={"min-h-fit"}>
-            <Stack className="pt-section-top mx-12 mb-12 items-start" gap="gap-section-gap">
-                <SectionTitle text="Tickets" className="" />
+            <div className="w-full">
+                <NavBar blue={true} />
+            </div>
+            <Stack className="pt-section-top mx-12 mb-12 items-start md:mx-32" gap="gap-section-gap">
                 <Stack className="items-start">
-                    <SectionDescription text="BLA SOL 2026" className={"font-bold"} />
+                    <SectionTitle text="BLA SOL 2026" className={"font-bold text-brand-dark"} />
                     <SectionDescription text='<img style="display: inline; padding-right: 8px; height: 45px;" src="/blaasol/calendar.png" alt="" /> 26 June 2026' className={"font-bold"} />
                     <SectionDescription text='<img style="display: inline; padding-right: 8px;" src="/blaasol/compass.png" alt="" /> Nordre Fælledvej, 8930 Randers' className={"font-bold"} />
                 </Stack>
             </Stack>
         </Section>
-        <Section bgImg={"bg-people.png"}>
-            <Stack>
-                <div className="bg-brand-light px-[40px] mx-[80px] mt-[100px] py-[20px]">
-                    <Stack className="items-start">
-                        <SectionTitle text="Standard ticket" className="pt-[20px]" />
-                        <Stack className="items-start">
-                            <SectionDescription text="<b>description description description description description description description</b>" />
-                            <div className="flex w-full justify-between">
-                                <div className="flex flex-col">
-                                    <SectionTitle className="text-brand-dark" text="880 KR" />
-                                    <SectionDescription text="<b>+30 KR</b>" />
-                                </div>
-                                <div className="flex justify-center h-fit">
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="-" />
-                                    <SectionTitle className="text-brand-dark px-12 text-center" text="0" />
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="+" />
-                                </div>
-                            </div>
-                        </Stack>
-                    </Stack>
-                </div>
-
-                <div className="bg-brand-light px-[40px] mx-[80px] mt-[100px] py-[20px]">
-                    <Stack className="items-start">
-                        <SectionTitle text="VIP ticket" className="pt-[20px]" />
-                        <Stack className="items-start">
-                            <SectionDescription text="<b>description description description description description description description</b>" />
-                            <div className="flex w-full justify-between">
-                                <div className="flex flex-col">
-                                    <SectionTitle className="text-brand-dark" text="880 KR" />
-                                    <SectionDescription text="<b>+30 KR</b>" />
-                                </div>
-                                <div className="flex justify-center h-fit">
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="-" />
-                                    <SectionTitle className="text-brand-dark px-12 text-center" text="0" />
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="+" />
-                                </div>
-                            </div>
-                        </Stack>
-                    </Stack>
-                </div>
-
-                <div className="bg-brand-light px-[40px] mx-[80px] mt-[100px] py-[20px]">
-                    <Stack className="items-start">
-                        <SectionTitle text="Early bird ticket 1" className="pt-[20px]" />
-                        <Stack className="items-start">
-                            <SectionDescription text="<b>description description description description description description description</b>" />
-                            <div className="flex w-full justify-between">
-                                <div className="flex flex-col">
-                                    <SectionTitle className="text-brand-dark" text="880 KR" />
-                                    <SectionDescription text="<b>+30 KR</b>" />
-                                </div>
-                                <div className="flex justify-center h-fit">
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="-" />
-                                    <SectionTitle className="text-brand-dark px-12 text-center" text="0" />
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="+" />
-                                </div>
-                            </div>
-                        </Stack>
-                    </Stack>
-                </div>
-
-                <div className="bg-brand-light px-[40px] mx-[80px] mt-[100px] py-[20px]">
-                    <Stack className="items-start">
-                        <SectionTitle text="Early bird ticket 2" className="pt-[20px]" />
-                        <Stack className="items-start">
-                            <SectionDescription text="<b>description description description description description description description</b>" />
-                            <div className="flex w-full justify-between">
-                                <div className="flex flex-col">
-                                    <SectionTitle className="text-brand-dark" text="880 KR" />
-                                    <SectionDescription text="<b>+30 KR</b>" />
-                                </div>
-                                <div className="flex justify-center h-fit">
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="-" />
-                                    <SectionTitle className="text-brand-dark px-12 text-center" text="0" />
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="+" />
-                                </div>
-                            </div>
-                        </Stack>
-                    </Stack>
-                </div>
+        <SectionTitle text="Tickets" className="md:mx-32 my-12" />
+        <Section bgImg={"bg-sun-center.png"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]">
+            <Stack className="py-18">
+                <TicketCard titleText="Standard ticket" descriptionText="Vores vejledende digitale pris lige indtil d. 5. Juni 2026." price="880" />
+                <TicketCard titleText="VIP ticket" descriptionText="Med adgang til VIP-området. Inkl. Aftenbuffet, Snacks, Fri Øl og Vand. Fra kl. 13 til 24." price="2075" />
+                <TicketCard titleText="Early bird 1" descriptionText="Nåede du ikke Early Bird billetsalget? Bare rolig, vi har 1000 ekstra billetter til en god pris" price="680" />
+                <TicketCard titleText="Early bird 2" descriptionText="Nåede du ikke Early Bird billetsalget? Bare rolig, vi har 1000 ekstra billetter til en god pris" price="780" />
             </Stack>
         </Section>
 
-        <Section classNameChildren={"items-start"} className={"min-h-fit"}>
-            <Stack className="pt-section-top mx-12 mb-12 items-start" gap="gap-section-gap">
-                <SectionTitle text="Born & Unge" className="" />
-            </Stack>
-
-            <Stack>
-                <div className="bg-brand-light px-[40px] mx-[80px] py-[20px]">
-                    <Stack className="items-start">
-                        <SectionTitle text="BØRNEBILLET" className="pt-[20px]" />
-                        <Stack className="items-start">
-                            <SectionDescription text="<b>description description description description description description description</b>" />
-                            <div className="flex w-full justify-between">
-                                <div className="flex flex-col">
-                                    <SectionTitle className="text-brand-dark" text="350 KR" />
-                                    <SectionDescription text="<b>+30 KR</b>" />
-                                </div>
-                                <div className="flex justify-center h-fit">
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="-" />
-                                    <SectionTitle className="text-brand-dark px-12 text-center" text="0" />
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="+" />
-                                </div>
-                            </div>
-                        </Stack>
-                    </Stack>
-                </div>
-
-                <div className="bg-brand-light px-[40px] mx-[80px] mt-[100px] py-[20px]">
-                    <Stack className="items-start">
-                        <SectionTitle text="UNGEBILLET" className="pt-[20px]" />
-                        <Stack className="items-start">
-                            <SectionDescription text="<b>description description description description description description description</b>" />
-                            <div className="flex w-full justify-between">
-                                <div className="flex flex-col">
-                                    <SectionTitle className="text-brand-dark" text="350 KR" />
-                                    <SectionDescription text="<b>+30 KR</b>" />
-                                </div>
-                                <div className="flex justify-center h-fit">
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="-" />
-                                    <SectionTitle className="text-brand-dark px-12 text-center" text="0" />
-                                    <SectionTitle className="text-brand-dark b-brand-dark border px-8 text-center" text="+" />
-                                </div>
-                            </div>
-                        </Stack>
-                    </Stack>
-                </div>
+        <SectionTitle text="Born & Unge" className="md:mx-32 my-12" />
+        <Section bgImg={"bg-sun-center.png"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]">
+            <Stack className="py-18">
+                <TicketCard titleText="BØRNEBILLET" descriptionText="Er du mellem 6 og 14 år? Så kommer du billigt til BLÅ SOL. Billetten gælder for barn mellem 6 og 14 år på festivaldagen, i følgeskab med en voksen." price="350" />
+                <TicketCard titleText="UNGEBILLET" descriptionText="Er du mellem 15 og 17 år? Så kommer du billigt til BLÅ SOL. Billetten gælder for barn mellem 15 og 17 år på festivaldagen." price="350" />
             </Stack>
         </Section>
         <Footer />
