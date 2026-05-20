@@ -68,7 +68,7 @@ export function Home() {
             <Section>
                 <Stack className="pt-section-top" gap="gap-section-gap">
                     <SectionTitle text="ARTISTS" />
-                    <GalleryContainer imgs={["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"]} />
+                    <GalleryContainer imgs={["saveus.png", "rune-rask.png", "benjamin-hav.png", "bonad.png"]} names={["Saveus", "Rune Rask", "Benjamin Hav", "Bonad"]} />
                     <ButtonLg text="SEE MORE" />
                 </Stack>
             </Section>
