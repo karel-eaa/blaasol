@@ -80,8 +80,8 @@ export function Home() {
                         <h2 className="order-1 md:hidden text-center font-bowlby text-brand-blue text-lg">Match</h2>
                         <img className="h-[600px] order-2 md:order-1" src="./song.png" alt="" />
                         <div className="hidden md:block order-2">
-                            <h2 className="text-center font-bowlby text-brand-blue text-section-title pt-[117px]">Match</h2>
-                            <h2 className="text-center font-bowlby text-brand-blue text-section-title pt-[66px]">to</h2>
+                            <h2 className="text-center font-bowlby text-brand-blue text-lg pt-[117px]">Match</h2>
+                            <h2 className="text-center font-bowlby text-brand-blue text-lg pt-[66px]">to</h2>
                         </div>
                         <h2 className="order-3 md:hidden text-center font-bowlby text-brand-blue text-lg">to</h2>
                         <img className="h-[600px] order-4 md:order-3" src="./artist.png" alt="" />
