@@ -6,6 +6,8 @@ import { SectionDescription } from "../components/SectionDescription";
 import { SectionTitle } from "../components/SectionTitle";
 import { Stack } from "../components/Stack";
 import { TicketCard } from "../components/TicketCard";
+import { patrickStory } from "../data/gallery";
+import { GalleryTestimony } from "../components/GalleryTestimony";
 
 export function Volunteer() {
     return (<>
@@ -23,17 +25,9 @@ export function Volunteer() {
         <Section bgImg={"bg-sun.png"} className={"min-h-fit"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]">
             <Stack className="pt-8" gap="gap-section-gap">
                 <div className="flex flex-col gap-8 items-center">
-<<<<<<< Updated upstream
                     <SectionTitle text="Get the experience of BLA SOL from the <br /> first line" />
                     <SectionDescription className="mx-4 md:max-w-[700px]" text="Have you ever wondered what happens behind the scenes at a festival and what it is like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
                     <SectionDescription className="mx-4 md:max-w-[700px]" text="Have you ever wondered what happens behind the scenes at a festival and what it is like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
-=======
-                    <div className="flex flex-col gap-8 w-full max-w-[700px] mx-4">
-                        <SectionTitle text="Get the experience of BLA SOL from the first line" />
-                        <SectionDescription text="Have you ever wondered what happens behind the scenes at a festival and what it's like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
-                        <SectionDescription text="Have you ever wondered what happens behind the scenes at a festival and what it's like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
-                    </div>
->>>>>>> Stashed changes
                 </div>
                 <div className="flex flex-col gap-8 items-center">
                     <div className="flex flex-col gap-8 w-full max-w-[700px] mx-4">
@@ -68,6 +62,7 @@ export function Volunteer() {
                 <ButtonLg href="/contact" text="Contact US" />
             </Stack>
         </Section>
+        <GalleryTestimony id="patrick-story-1" story={patrickStory} href="#patrick-story-2" />
         <Footer />
     </>)
 }
