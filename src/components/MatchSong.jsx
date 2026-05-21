@@ -9,10 +9,10 @@ const SONGS = [
 ];
 
 const CHOICES = [
-    { name: "SAVEUS",       img: "saveus.png",       bg: "bg-[#FAD201]" },
+    { name: "SAVEUS",       img: "saveus.png",       bg: "bg-artist-yellow" },
     { name: "RUNE RASK",    img: "rune-rask.png",    bg: "bg-white" },
-    { name: "BENJAMIN HAV", img: "benjamin-hav.png", bg: "bg-[#D2E2EE]" },
-    { name: "BONAD",        img: "bonad.png",        bg: "bg-[#112435]" },
+    { name: "BENJAMIN HAV", img: "benjamin-hav.png", bg: "bg-artist-light" },
+    { name: "BONAD",        img: "bonad.png",        bg: "bg-artist-navy" },
 ];
 
 const BARS = [
@@ -53,21 +53,21 @@ export function MatchSong() {
             <div style={{ backgroundImage: `url("${assetUrl(song.cover)}")` }} className="relative w-full aspect-[16/9] md:h-[350px] md:w-[800px] rounded-[15px] overflow-hidden bg-cover bg-center flex flex-col justify-end p-6 md:p-8 shadow-xl">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/50 pointer-events-none" />
                 <div className="relative z-10 flex flex-col items-center">
-                    <h3 className="font-bowlby text-[#F45348] text-base md:text-lg mb-6 uppercase tracking-wider">{song.genre}</h3>
+                    <h3 className="mb-6 font-bowlby text-base uppercase tracking-wider text-brand-red md:text-lg">{song.genre}</h3>
                     <div className="flex items-center gap-8 mb-6">
-                        <button onClick={onPrev} className="text-[#EDF5FC] hover:text-[#0393CA] transition-colors p-2" aria-label="Previous">
+                        <button onClick={onPrev} className="p-2 text-brand-light transition-colors hover:text-brand-blue" aria-label="Previous">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6L18 18V6z" /></svg>
                         </button>
-                        <button onClick={onPlay} className="w-14 h-14 rounded-full bg-[#061826] hover:bg-[#0393CA] flex items-center justify-center text-white transition-all hover:scale-105" aria-label={playing ? "Pause" : "Play"}>
+                        <button onClick={onPlay} className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-dark text-brand-light transition-all hover:scale-105 hover:bg-brand-blue" aria-label={playing ? "Pause" : "Play"}>
                             {playing
                                 ? <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
                                 : <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><path d="M8 5v14l11-7z" /></svg>}
                         </button>
-                        <button onClick={onNext} className="text-[#EDF5FC] hover:text-[#0393CA] transition-colors p-2" aria-label="Next">
+                        <button onClick={onNext} className="p-2 text-brand-light transition-colors hover:text-brand-blue" aria-label="Next">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6zm9-12v12h2V6z" /></svg>
                         </button>
                     </div>
-                    <div className="w-full flex items-center gap-4 text-white font-poppins text-xs">
+                    <div className="flex w-full items-center gap-4 font-poppins text-sm text-brand-light">
                         <span>{fmt(time)}</span>
                         <div className="flex-1 h-1.5 bg-white/30 rounded-full overflow-hidden">
                             <div className="h-full bg-white rounded-full transition-all duration-100" style={{ width: `${progress}%` }} />
@@ -92,7 +92,7 @@ export function MatchSong() {
                         <div className="w-full aspect-square overflow-hidden rounded-[10px]">
                             <img src={assetUrl(c.img)} alt={c.name} className="w-full h-full object-cover" />
                         </div>
-                        <span className="font-bowlby text-[#F45348] text-base mt-4">{c.name}</span>
+                        <span className="mt-4 font-bowlby text-base text-brand-red">{c.name}</span>
                     </button>
                 ))}
             </div>

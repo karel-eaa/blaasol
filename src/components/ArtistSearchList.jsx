@@ -16,11 +16,11 @@ export function ArtistSearchList({ artists }) {
 
     return (
         <Section bgImg="Sun_rays.png" className="min-h-fit py-6 w-full" classNameChildren="flex flex-col items-center w-full px-4 md:px-[60px]">
-            <h2 className="font-bowlby text-brand-blue text-lg uppercase text-center mb-6 z-10">CHECK OUT ARTISTS</h2>
+            <h2 className="z-10 mb-6 text-center font-bowlby text-lg uppercase text-brand-blue">CHECK OUT ARTISTS</h2>
 
             {/* Search bar */}
-            <div className="flex items-center bg-white border-[3px] border-[#F45348] rounded-[15px] px-4 py-2.5 max-w-[500px] w-full mb-10 shadow-md z-10">
-                <input type="text" value={searchQuery} onChange={handleSearch} className="flex-grow outline-none border-none text-[#061826] font-poppins font-medium text-base py-0 px-2" />
+            <div className="z-10 mb-10 flex w-full max-w-[500px] items-center rounded-[15px] border-[3px] border-brand-red bg-white px-4 py-2.5 shadow-md">
+                <input type="text" value={searchQuery} onChange={handleSearch} className="flex-grow border-none px-2 py-0 font-poppins text-base font-medium text-brand-dark outline-none" />
                 <img src={assetUrl("Search.svg")} className="w-8 h-8 ml-2 cursor-pointer" alt="Search" />
                 <img src={assetUrl("Filter.svg")} className="w-8 h-8 ml-2 cursor-pointer" alt="Filter" />
             </div>

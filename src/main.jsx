@@ -13,6 +13,7 @@ import { GoodActs } from './views/GoodActs.jsx'
 import { Home } from './views/Home.jsx'
 import { Shop } from './views/Shop.jsx'
 import { Sponsors } from './views/Sponsors.jsx'
+import { Schedule } from './views/Schedule.jsx'
 import { Tickets } from './views/Tickets.jsx'
 import { Volunteer } from './views/Volunteer.jsx'
 
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/experience' element={ <Experience /> } />
         <Route path='/volunteer' element={ <Volunteer /> } />
         <Route path='/sponsors' element={ <Sponsors /> } />
+        <Route path='/schedule' element={ <Schedule /> } />
         <Route path='/tickets' element={ <Tickets /> } />
         <Route path='/artists' element={ <Artists /> } />
         <Route path='/artists/:id' element={ <Artist /> } />

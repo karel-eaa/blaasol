@@ -6,6 +6,13 @@
   100% { transform: translateX(-50%); }
 }
 
+@keyframes word-carousel {
+  0%, 22% { transform: translateY(0); }
+  28%, 50% { transform: translateY(-1.2em); }
+  56%, 78% { transform: translateY(-2.4em); }
+  84%, 100% { transform: translateY(-3.6em); }
+}
+
 @theme {
   /* Fonts */
   --font-bowlby: 'Bowlby One', sans-serif;
@@ -25,9 +32,16 @@
   --color-brand-blue:  #0393CA;  /* headings, marquee bg, footer links */
   --color-brand-light: #EDF5FC;  /* text on dark/colored backgrounds */
   --color-brand-dark:  #061826;  /* body text on light backgrounds */
+  --color-artist-yellow: #FAD201;
+  --color-artist-light: #D2E2EE;
+  --color-artist-navy: #112435;
+  --color-player-surface: #d9d9d9;
+  --color-player-control: #3f4548;
+  --color-player-muted: #555555;
 
   /* Animations */
   --animate-marquee: marquee 30s linear infinite;
+  --animate-word-carousel: word-carousel 5s ease-in-out infinite;
 }
 
 /*@layer base {

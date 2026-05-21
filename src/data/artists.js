@@ -6,6 +6,7 @@ export const artists = [
         image: "saveus.png",
         secondaryImage: "artist.png",
         albumCover: "albumCover_Saveus.png",
+        spotifyEmbed: "https://open.spotify.com/embed/artist/2rR0cafJvL0JVTC8E2qIqt",
         cardDate: "11.05",
         scheduleDate: "May 15th",
         scheduleTime: "12:45",
@@ -21,10 +22,10 @@ export const artists = [
             { title: "Levitate Me", artist: "Saveus", duration: "5:17" },
             { title: "Time Can Heal a Man", artist: "Saveus", duration: "3:35" }
         ],
-        bgClass: "bg-[#FAD201]",
-        bubbleBg: "bg-black/50 text-[#EDF5FC]",
+        bgClass: "bg-artist-yellow",
+        bubbleBg: "bg-black/50 text-brand-light",
         bubbleText:
-            "Saveus leverer storslaet electropop fyldt med store foelelser og faengende melodier."
+            "Saveus delivers grand electropop full of big emotions and catchy melodies."
     },
     {
         id: "rune-rask",
@@ -33,6 +34,7 @@ export const artists = [
         image: "rune-rask.png",
         secondaryImage: "artist.png",
         albumCover: "albumCover_RuneRask.png",
+        spotifyEmbed: "https://open.spotify.com/embed/artist/3zuy1LOMq0y8aHZn4Ogax0",
         cardDate: "11.05",
         scheduleDate: "May 15th",
         scheduleTime: "14:30",
@@ -49,9 +51,9 @@ export const artists = [
             { title: "Heavy Weather", artist: "Rune Rask", duration: "3:47" }
         ],
         bgClass: "bg-white",
-        bubbleBg: "bg-[#D2E2EE]/85 text-[#061826]",
+        bubbleBg: "bg-artist-light/85 text-brand-dark",
         bubbleText:
-            "Kendt fra Suspekt bringer Rune Rask tunge beats og elektronisk mesterskab til scenen."
+            "Known from Suspekt, Rune Rask brings heavy beats and electronic mastery to the stage."
     },
     {
         id: "bonad",
@@ -60,6 +62,7 @@ export const artists = [
         image: "bonad.png",
         secondaryImage: "artist.png",
         albumCover: "albumCover_BONAD.png",
+        spotifyEmbed: "https://open.spotify.com/embed/track/2S48Qxxg6vaE60hYx18wDd",
         cardDate: "11.05",
         scheduleDate: "May 15th",
         scheduleTime: "16:15",
@@ -75,10 +78,10 @@ export const artists = [
             { title: "Afterimage", artist: "Bonad", duration: "4:06" },
             { title: "Satellite", artist: "Bonad", duration: "3:38" }
         ],
-        bgClass: "bg-[#112435]",
-        bubbleBg: "bg-black/70 text-[#EDF5FC]",
+        bgClass: "bg-artist-navy",
+        bubbleBg: "bg-black/70 text-brand-light",
         bubbleText:
-            "Bonad skaber en unik atmosfaere med deres energiske og melodiske synth-rock."
+            "Bonad creates a unique atmosphere with energetic and melodic synth rock."
     },
     {
         id: "benjamin-hav",
@@ -87,6 +90,7 @@ export const artists = [
         image: "benjamin-hav.png",
         secondaryImage: "artist.png",
         albumCover: "albumCover_BenjaminHav.png",
+        spotifyEmbed: "https://open.spotify.com/embed/artist/67pwWZtcg7U2P2keoeC9jW",
         cardDate: "11.05",
         scheduleDate: "May 15th",
         scheduleTime: "18:00",
@@ -97,23 +101,24 @@ export const artists = [
             "Together with Familien, he brings a show that feels alive from the first bar: big band energy, playful arrangements, and a frontman who keeps the audience guessing."
         ],
         topSongs: [
-            { title: "Den Dejligste Boy", artist: "Benjamin Hav", duration: "3:27" },
+            { title: "The Sweetest Boy", artist: "Benjamin Hav", duration: "3:27" },
             { title: "Musse", artist: "Benjamin Hav", duration: "3:01" },
             { title: "Cannelloni Macaroni", artist: "Benjamin Hav", duration: "2:56" },
-            { title: "Naar Du Ser Paa Mig", artist: "Benjamin Hav", duration: "3:43" }
+            { title: "When You Look At Me", artist: "Benjamin Hav", duration: "3:43" }
         ],
-        bgClass: "bg-[#D2E2EE]",
-        bubbleBg: "bg-white/80 text-[#061826]",
+        bgClass: "bg-artist-light",
+        bubbleBg: "bg-white/80 text-brand-dark",
         bubbleText:
-            "Benjamin Hav & Familien leverer et af Danmarks mest underholdende og energiske liveshows."
+            "Benjamin Hav & Familien delivers one of Denmark's most entertaining and energetic live shows."
     },
     {
         id: "infernal",
         name: "Infernal",
         genres: ["Dance", "Pop", "Electronic"],
-        image: "1.png",
+        image: "infernal.jpg",
         secondaryImage: "artist.png",
         albumCover: "albumCover_Saveus.png",
+        spotifyEmbed: "https://open.spotify.com/embed/artist/2nnBn2iyqkuOBj85nhGp1k",
         cardDate: "12.05",
         scheduleDate: "May 16th",
         scheduleTime: "20:45",
@@ -129,18 +134,19 @@ export const artists = [
             { title: "Ten Miles", artist: "Infernal", duration: "3:16" },
             { title: "Whenever You Need Me", artist: "Infernal", duration: "3:44" }
         ],
-        bgClass: "bg-[#FAD201]",
-        bubbleBg: "bg-black/50 text-[#EDF5FC]",
+        bgClass: "bg-artist-yellow",
+        bubbleBg: "bg-black/50 text-brand-light",
         bubbleText:
-            "Infernal saetter gang i festen med deres legendariske dance-pop hits og vilde energi."
+            "Infernal gets the party going with legendary dance-pop hits and wild energy."
     },
     {
         id: "zar-paulo",
         name: "Zar Paulo",
         genres: ["Post Punk", "Pop", "Danish"],
-        image: "2.png",
+        image: "zar_paulo.png",
         secondaryImage: "artist.png",
         albumCover: "albumCover_RuneRask.png",
+        spotifyEmbed: "https://open.spotify.com/embed/artist/5Org3M2mFFEFd8A57h9Yv2",
         cardDate: "12.05",
         scheduleDate: "May 16th",
         scheduleTime: "17:30",
@@ -151,23 +157,24 @@ export const artists = [
             "At Bla Sol, they bring a set for the front rows: immediate, rhythmic, and full of choruses that land fast."
         ],
         topSongs: [
-            { title: "Klap For Faedrelandet", artist: "Zar Paulo", duration: "3:18" },
+            { title: "Applause For The Homeland", artist: "Zar Paulo", duration: "3:18" },
             { title: "Stop Believing", artist: "Zar Paulo", duration: "3:04" },
-            { title: "Elendig Software", artist: "Zar Paulo", duration: "3:51" },
+            { title: "Miserable Software", artist: "Zar Paulo", duration: "3:51" },
             { title: "Tiger", artist: "Zar Paulo", duration: "2:59" }
         ],
         bgClass: "bg-white",
-        bubbleBg: "bg-[#D2E2EE]/85 text-[#061826]",
+        bubbleBg: "bg-artist-light/85 text-brand-dark",
         bubbleText:
-            "Zar Paulo blaeser publikum bagover med deres medrivende post-punk og dansksprogede pop."
+            "Zar Paulo knocks the audience back with captivating post-punk and Danish-language pop."
     },
     {
         id: "gnags",
         name: "Gnags",
         genres: ["Pop Rock", "Danish", "Classic"],
-        image: "3.png",
+        image: "gnags.jpg",
         secondaryImage: "artist.png",
         albumCover: "albumCover_BONAD.png",
+        spotifyEmbed: "https://open.spotify.com/embed/artist/460C51GopZ9kmWvz3Z0649",
         cardDate: "13.05",
         scheduleDate: "May 17th",
         scheduleTime: "19:15",
@@ -179,22 +186,23 @@ export const artists = [
         ],
         topSongs: [
             { title: "Mr. Swing King", artist: "Gnags", duration: "4:07" },
-            { title: "Vilde Kaniner", artist: "Gnags", duration: "3:35" },
-            { title: "Danmark", artist: "Gnags", duration: "4:20" },
-            { title: "Slingrer Ned Ad Vestergade", artist: "Gnags", duration: "3:46" }
+            { title: "Wild Rabbits", artist: "Gnags", duration: "3:35" },
+            { title: "Denmark", artist: "Gnags", duration: "4:20" },
+            { title: "Stumbling Down Vestergade", artist: "Gnags", duration: "3:46" }
         ],
-        bgClass: "bg-[#112435]",
-        bubbleBg: "bg-black/70 text-[#EDF5FC]",
+        bgClass: "bg-artist-navy",
+        bubbleBg: "bg-black/70 text-brand-light",
         bubbleText:
-            "De legendariske Gnags bringer klassiske danske pop-rock hits og masser af glaede."
+            "The legendary Gnags brings classic Danish pop-rock hits and plenty of joy."
     },
     {
         id: "specktors",
         name: "Specktors",
         genres: ["Hip Hop", "Pop", "Party"],
-        image: "4.png",
+        image: "spektors.jpg",
         secondaryImage: "artist.png",
         albumCover: "albumCover_BenjaminHav.png",
+        spotifyEmbed: "https://open.spotify.com/embed/track/593Jq3pm0OleC7Mz6STFFk",
         cardDate: "13.05",
         scheduleDate: "May 17th",
         scheduleTime: "22:00",
@@ -205,14 +213,14 @@ export const artists = [
             "Their Bla Sol set is late-night fuel: big drops, loud choruses, and a stage presence made for movement."
         ],
         topSongs: [
-            { title: "Laagsus", artist: "Specktors", duration: "3:24" },
+            { title: "Luxury", artist: "Specktors", duration: "3:24" },
             { title: "Unz Unz", artist: "Specktors", duration: "3:05" },
             { title: "Gina Jaqueline", artist: "Specktors", duration: "3:31" },
-            { title: "Broer", artist: "Specktors", duration: "2:57" }
+            { title: "Brothers", artist: "Specktors", duration: "2:57" }
         ],
-        bgClass: "bg-[#D2E2EE]",
-        bubbleBg: "bg-white/80 text-[#061826]",
+        bgClass: "bg-artist-light",
+        bubbleBg: "bg-white/80 text-brand-dark",
         bubbleText:
-            "Specktors garanterer en bas-tung og energisk hiphop-fest, der faar alle til at hoppe."
+            "Specktors guarantees a bass-heavy and energetic hip-hop party that gets everyone jumping."
     }
 ];

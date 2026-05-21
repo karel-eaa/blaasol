@@ -9,10 +9,10 @@ export function ArtistLifeStory({ artist }) {
             />
             <div className="relative z-10 grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center">
                 <div>
-                    <h2 className="font-bowlby text-xl leading-tight text-brand-blue md:text-2xl">
+                    <h2 className="font-bowlby text-base leading-tight text-brand-blue">
                         LIFE STORY
                     </h2>
-                    <div className="mt-8 flex flex-col gap-6 font-poppins text-base font-medium leading-relaxed text-brand-dark">
+                    <div className="mt-8 flex flex-col gap-6 font-poppins text-sm font-light leading-relaxed text-brand-dark">
                         {artist.lifeStory.map((paragraph) => (
                             <p key={paragraph}>{paragraph}</p>
                         ))}

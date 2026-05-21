@@ -10,10 +10,10 @@ export function ArtistHero({ artist }) {
         >
             <div className="z-10 flex w-full flex-col gap-6">
                 <div className="flex flex-col items-start gap-2 md:flex-row md:items-end md:gap-8">
-                    <h1 className="font-bowlby text-3xl leading-none text-brand-red md:text-5xl">
+                    <h1 className="font-bowlby text-lg leading-none text-brand-red">
                         {artist.name}
                     </h1>
-                    <p className="font-bowlby text-base leading-tight text-brand-blue md:text-lg">
+                    <p className="font-bowlby text-base leading-tight text-brand-blue">
                         {artist.genres.join(", ")}
                     </p>
                 </div>

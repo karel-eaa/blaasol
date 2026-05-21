@@ -16,15 +16,15 @@ export function Experience() {
             <Stack className="pt-section-top mx-12 mb-12 items-start md:mx-32" gap="gap-section-gap">
                 <Stack className="items-start">
                     <SectionTitle text="EVERYTHING WE HAVE TO OFFER" className={""} />
-                    <div className="flex flex-col gap-8 ml-4 border-l-3 border-brand-red">
-                        <SectionTitle text="&nbsp&nbsp&nbsp&nbspTHE EXPERIENCE" className={"text-brand-dark"} />
-                        <SectionTitle text="&nbsp&nbsp&nbsp&nbspTHE MAP" className={"text-brand-dark"} />
-                        <SectionTitle text="&nbsp&nbsp&nbsp&nbspFREE DRINKS" className={"text-brand-dark"} />
+                    <div className="flex flex-col gap-8 ml-4 border-l-3 border-brand-red pl-8">
+                        <a href="#experience" className="font-bowlby text-lg text-brand-dark">THE EXPERIENCE</a>
+                        <a href="#map" className="font-bowlby text-lg text-brand-dark">THE MAP</a>
+                        <a href="#free-drinks" className="font-bowlby text-lg text-brand-dark">FREE DRINKS</a>
                     </div>
                 </Stack>
             </Stack>
         </Section>
-        <Section bgImg={"bg-place.png"} className={"min-h-fit md:px-34 px-4 md:py-34 py-4"} gradient={false}>
+        <Section id="experience" bgImg={"bg-place.png"} className={"min-h-fit scroll-mt-12 md:px-34 px-4 md:py-34 py-4"} gradient={false}>
             <SectionTitle text="The experience" className="text-brand-red" />
             <br />
             <br />
@@ -35,7 +35,7 @@ BLA SOL brings creativity to life with local brands and artists to make your fes
             <Stack className="py-18">
                 <SectionTitle text="The local brands we work with" className="" />
                 <GalleryContainer imgs={["thor.png", "royal.png", "rk.png", "berry.png"]} imgSize={"size-64"} />
-                <ButtonLg text="See all our partners" className="mt-12" />
+                <ButtonLg href="/sponsors" text="See all our partners" className="mt-12" />
             </Stack>
         </Section>
 
@@ -43,18 +43,18 @@ BLA SOL brings creativity to life with local brands and artists to make your fes
             <Stack className="py-18">
                 <SectionTitle text="The local artists we work with" className="" />
                 <GalleryContainer imgs={["downtown.png", "karoline.png", "bonad2.png", "anastasia.png"]} names={["DOWNTOWN JULY", "Karoline Mousing", "BONAD", "ANASTASIA"]} darkNames={true} />
-                <ButtonLg text="See all our lineup" className="mt-12" />
+                <ButtonLg href="/artists" text="See all our lineup" className="mt-12" />
             </Stack>
         </Section>
 
-        <Section bgImg={"bg-sun-reversed.png"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]" className={"min-h-fit py-12"}>
+        <Section id="map" bgImg={"bg-sun-reversed.png"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]" className={"min-h-fit scroll-mt-12 pt-12 pb-28"}>
             <Stack>
                 <SectionTitle text="The map" />
                 <img src="/blaasol/map.png" alt="" />
             </Stack>
         </Section>
 
-        <Section className={"min-h-fit"}>
+        <Section id="free-drinks" className={"min-h-fit scroll-mt-12 pt-16"}>
             <Stack className="py-8" className={"items-start"}>
                 <SectionTitle text="Beer too expensive?" className="text-brand-dark" />
                 <div className="flex justify-end w-full items-end mx-12">
@@ -66,7 +66,7 @@ BLA SOL brings creativity to life with local brands and artists to make your fes
 
         <Section className={"pt-section-gap min-h-fit mb-24"}>
             <Stack className="items-start">
-                <SectionTitle text="Do Good Acts ©" className="" />
+                <SectionTitle text="Do Good Acts" className="" />
                 <SectionDescription text="Do Good Acts like collecting trash and helping people and earn rewards!" />
                 <SectionDescription text="Get as many stamp cards as you can from staff." />
                 <SectionDescription text="You can choose between one free beer or one free hotdog." />

@@ -27,7 +27,7 @@ export function TicketCard({ titleText = "Standard ticket", descriptionText = "V
                                 <div onClick={() => setCounter(counter + 1)}><SectionTitle className="text-brand-red b-brand-dark border border-brand-red px-4 text-center rounded-[8px] cursor-pointer select-none" text="+" /></div>
                             </div>}
                     </div>
-                    {buttonText ? <ButtonLg text={buttonText} /> : null}
+                    {buttonText ? <ButtonLg href="/volunteer" text={buttonText} /> : null}
                 </Stack>
             </Stack>
         </div>

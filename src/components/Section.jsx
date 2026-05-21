@@ -1,9 +1,9 @@
 import { twMerge } from "tailwind-merge"
 import { assetUrl } from "../utils/assetUrl"
 
-export function Section({ bgImg = null, children, className, classNameChildren, bgPadding = "inset-0", gradient = true }) {
+export function Section({ id, bgImg = null, children, className, classNameChildren, bgPadding = "inset-0", gradient = true }) {
     return (
-        <div className={twMerge(`relative flex flex-col items-center min-h-screen`, className)}>
+        <div id={id} className={twMerge(`relative flex flex-col items-center min-h-screen`, className)}>
             {bgImg && (
                 <div
                     style={{ backgroundImage: `url(${assetUrl(bgImg)})` }}

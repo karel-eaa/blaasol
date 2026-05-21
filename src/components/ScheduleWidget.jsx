@@ -1,4 +1,5 @@
 import { assetUrl } from "../utils/assetUrl";
+import { NavLink } from "react-router";
 
 export function ScheduleWidget() {
     return (
@@ -9,13 +10,13 @@ export function ScheduleWidget() {
             >
                 <div className="absolute inset-0 bg-white/10 pointer-events-none" />
                 <div className="relative z-10 flex flex-col items-center">
-                    <h1 className="font-bowlby text-[#061826] text-lg uppercase tracking-wide">MAKE YOUR OWN SCHEDULE</h1>
-                    <p className="font-poppins text-[#061826] text-xs md:text-sm font-medium mt-2 max-w-[500px]">
-                        USE MY SCHEDULE OR CLONE AN EXISTING ONE AND MAKE IT YOUR OWN
+                    <h1 className="font-bowlby text-lg uppercase tracking-wide text-brand-dark">MAKE YOUR OWN SCHEDULE</h1>
+                    <p className="mt-2 max-w-[500px] font-poppins text-sm font-medium text-brand-dark">
+                        Add the artists you want to see and share it with your friends
                     </p>
-                    <button className="bg-brand-red text-brand-light font-bowlby py-2.5 px-8 rounded-[15px] mt-5 cursor-pointer hover:scale-105 transition-all text-base shadow-md">
+                    <NavLink to="/schedule" className="mt-5 rounded-[15px] bg-brand-red px-8 py-2.5 font-bowlby text-base text-brand-light shadow-md transition-all hover:scale-105">
                         Check out
-                    </button>
+                    </NavLink>
                 </div>
             </div>
         </section>

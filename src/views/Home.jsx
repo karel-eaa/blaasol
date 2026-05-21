@@ -7,12 +7,13 @@
 
 import { ButtonLg } from "../components/ButtonLg";
 import { Footer } from "../components/Footer";
-import { GalleryContainer } from "../components/GalleryContainer";
+import { HomeArtistCarousel } from "../components/HomeArtistCarousel";
 import { NavBar } from "../components/NavBar";
 import { Section } from "../components/Section";
 import { SectionDescription } from "../components/SectionDescription";
 import { SectionTitle } from "../components/SectionTitle";
 import { Stack } from "../components/Stack";
+import { VerticalWordCarousel } from "../components/VerticalWordCarousel";
 
 export function Home() {
     return (
@@ -41,7 +42,7 @@ export function Home() {
                                 saveus ◆ infernal
                             </span>
                         </h2>
-                        <a className="bg-brand-red text-brand-light font-bowlby py-[10px] px-[31.5px] rounded-[15px] cursor-pointer text-base w-fit mx-auto md:mx-0">Discover our line-up</a>
+                        <ButtonLg href="/artists" text="Discover our line-up" className="mx-auto md:mx-0" />
                     </div>
                 </div>
             </div>
@@ -61,32 +62,41 @@ export function Home() {
                 <Stack className="pt-section-top" gap="gap-section-gap">
                     <SectionTitle text="ON SITE HELP" />
                     <SectionDescription text="Arrived at the festival? Check out all of the activities you can<br /> engage with at the festival. " />
-                    <ButtonLg text="CHECK FESTIVAL ESSENTIALS" />
+                    <ButtonLg href="/experience" text="CHECK FESTIVAL ESSENTIALS" />
                 </Stack>
             </Section>
             {/* Artists section */}
             <Section>
                 <Stack className="pt-section-top" gap="gap-section-gap">
                     <SectionTitle text="ARTISTS" />
-                    <GalleryContainer imgs={["saveus.png", "rune-rask.png", "benjamin-hav.png", "bonad.png"]} names={["Saveus", "Rune Rask", "Benjamin Hav", "Bonad"]} />
-                    <ButtonLg text="SEE MORE" />
+                    <HomeArtistCarousel />
+                    <ButtonLg href="/artists" text="SEE MORE" />
                 </Stack>
             </Section>
             {/* Match mini-game section */}
             <Section bgImg={"bg-sun.png"}>
-                <Stack className="pt-section-gap" gap="gap-section-gap">
-                    <SectionTitle text="Don’t know all the artists?<br /> Discover them here" className="text-center" />
-                    <div className="flex flex-col items-center gap-[55px] mt-[120px] md:flex-row">
-                        <h2 className="order-1 md:hidden text-center font-bowlby text-brand-blue text-lg">Match</h2>
-                        <img className="h-[600px] order-2 md:order-1" src="./song.png" alt="" />
-                        <div className="hidden md:block order-2">
-                            <h2 className="text-center font-bowlby text-brand-blue text-lg pt-[117px]">Match</h2>
-                            <h2 className="text-center font-bowlby text-brand-blue text-lg pt-[66px]">to</h2>
+                <Stack className="pt-section-gap" gap="gap-8">
+                    <SectionTitle text="Don't know all the artists?<br /> Discover them here" className="text-center" />
+                    <div className="mt-8 flex flex-col items-center gap-[55px] md:flex-row">
+                        <div className="relative order-1">
+                            <img className="h-[600px]" src="./song.png" alt="" />
+                            <h2 className="absolute inset-0 flex items-center justify-center text-center font-bowlby text-brand-light text-lg">
+                                <span className="rounded-[15px] bg-brand-blue/70 px-6 py-3 shadow-lg">
+                                    <VerticalWordCarousel words={["song", "sound", "beat"]} />
+                                </span>
+                            </h2>
                         </div>
-                        <h2 className="order-3 md:hidden text-center font-bowlby text-brand-blue text-lg">to</h2>
-                        <img className="h-[600px] order-4 md:order-3" src="./artist.png" alt="" />
+                        <h2 className="order-2 rounded-[15px] bg-brand-blue/70 px-6 py-3 text-center font-bowlby text-brand-light text-lg shadow-lg">to</h2>
+                        <div className="relative order-3">
+                            <img className="h-[600px]" src="./artist.png" alt="" />
+                            <h2 className="absolute inset-0 flex items-center justify-center text-center font-bowlby text-brand-light text-lg">
+                                <span className="rounded-[15px] bg-brand-blue/70 px-6 py-3 shadow-lg">
+                                    <VerticalWordCarousel words={["artist", "singer", "band"]} />
+                                </span>
+                            </h2>
+                        </div>
                     </div>
-                    <ButtonLg text="PLAY" />
+                    <ButtonLg href="/artists" text="PLAY" />
                 </Stack>
             </Section>
             {/* No money for festival section */}
@@ -96,9 +106,9 @@ export function Home() {
                     <Stack className="md:flex-row">
                         <img className="h-[600px]" src="./no-money.png" alt="" />
                         <Stack>
-                            <p className="font-poppins text-[#061826] text-sm pt-[62px]">Arrived at the festival? Check out all of the activities<br />you can engage with at the festival.</p>
-                            <a className="bg-[#F45348] text-[#EDF5FC] text-base font-bowlby mt-[92px] px-[40px] py-[10px] rounded-[15px] cursor-pointer w-full text-center">Become volunteer</a>
-                            <a className="bg-[#F45348] text-[#EDF5FC] text-base font-bowlby px-[40px] py-[10px] rounded-[15px] cursor-pointer w-full text-center">Get free drinks</a>
+                            <p className="font-poppins text-brand-dark text-sm pt-[62px]">Arrived at the festival? Check out all of the activities<br />you can engage with at the festival.</p>
+                            <ButtonLg href="/volunteer" text="Become volunteer" className="mt-[92px] w-full text-center" />
+                            <ButtonLg href="/experience#free-drinks" text="Get free drinks" className="w-full text-center" />
                         </Stack>
                     </Stack>
                 </Stack>

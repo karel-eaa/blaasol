@@ -14,10 +14,10 @@ export function Artist() {
 
     if (!artist) {
         return (
-            <div className="flex min-h-screen flex-col bg-[#EDF5FC] text-brand-dark">
+            <div className="flex min-h-screen flex-col bg-brand-light text-brand-dark">
                 <NavBar blue={true} />
                 <main className="flex flex-1 flex-col items-center justify-center gap-6 px-6 py-24 text-center">
-                    <h1 className="font-bowlby text-4xl leading-tight text-brand-red md:text-6xl">
+                    <h1 className="font-bowlby text-lg leading-tight text-brand-red">
                         Artist not found
                     </h1>
                     <p className="max-w-[520px] font-poppins text-base font-medium">

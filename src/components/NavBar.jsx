@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
 import { assetUrl } from "../utils/assetUrl";
+import { navigationLinks } from "../data/navigationLinks";
 
 export function NavBar({ blue = false, buyTicketsButton = true }) {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -27,19 +28,8 @@ export function NavBar({ blue = false, buyTicketsButton = true }) {
 
                         {/* Dropdown */}
                         {menuOpen && (
-                            <div className="absolute top-full right-0 mt-3 bg-brand-blue p-6 flex flex-col gap-3 shadow-lg min-w-[180px] z-50">
-                                {[
-                                    { to: "/", label: "Home" },
-                                    { to: "/artists", label: "Artists" },
-                                    { to: "/tickets", label: "Tickets" },
-                                    { to: "/experience", label: "Experience" },
-                                    { to: "/gallery", label: "Gallery" },
-                                    { to: "/good-acts", label: "Good Acts" },
-                                    { to: "/volunteer", label: "Volunteer" },
-                                    { to: "/sponsors", label: "Sponsors" },
-                                    { to: "/shop", label: "Shop" },
-                                    { to: "/contact", label: "Contact" },
-                                ].map(({ to, label }) => (
+                            <div className="absolute top-full right-0 z-50 mt-3 flex min-w-[180px] flex-col gap-3 bg-brand-blue pb-16 pl-16 pr-6 pt-6 shadow-lg">
+                                {navigationLinks.map(({ to, label }) => (
                                     <NavLink
                                         key={to}
                                         to={to}
