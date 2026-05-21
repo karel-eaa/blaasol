@@ -42,8 +42,8 @@ export function Volunteer() {
             </Stack>
         </Section>
 
-        <SectionTitle text="What we offer" className="md:mx-32 my-8" />
-        <Section id="offers" bgImg={"bg-sun-center.png"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]" className="scroll-mt-12">
+        <SectionTitle text="What we offer" className="text-center mt-32" />
+        <Section bgImg={"bg-sun-center.png"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]">
             <Stack className="py-18">
                 <TicketCard buttonText="Sign Up" titleText="Before" subTitle={"10 hours of work"} descriptionText="The hours can be completed over 1 or 2 shifts before the day of the festival.<br/>- Help create the framework for an unforgettable experience when you assist with the setup of the festival grounds, decorations, and preparations.<br/>- Setup of booths and furnitureSetup of fences and tents<br/>- Setup of the stageDecorating the groundsSecurity leading up to the festival" price="Setup is from May 15 to June 5, 2026." />
                 <TicketCard buttonText="Sign Up" titleText="During" subTitle={"6 hours of work"} descriptionText="The hours must be completed in one continuous shift. Help ensure a great experience for guests, artists, and fellow volunteers on the day of the festival with a smile, an overview, and hands ready to pitch in whenever needed.<br />- Ticket control<br />- Sales and information<br />- Security<br />- Bar<br />- Cleanup and cleaning" price="The festival is on June 6, 2026." />
