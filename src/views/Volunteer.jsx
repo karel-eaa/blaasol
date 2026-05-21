@@ -23,20 +23,32 @@ export function Volunteer() {
         <Section bgImg={"bg-sun.png"} className={"min-h-fit"} bgPadding="md:inset-y-[30px] md:inset-x-[80px]">
             <Stack className="pt-8" gap="gap-section-gap">
                 <div className="flex flex-col gap-8 items-center">
+<<<<<<< Updated upstream
                     <SectionTitle text="Get the experience of BLA SOL from the <br /> first line" />
                     <SectionDescription className="mx-4 md:max-w-[700px]" text="Have you ever wondered what happens behind the scenes at a festival and what it is like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
                     <SectionDescription className="mx-4 md:max-w-[700px]" text="Have you ever wondered what happens behind the scenes at a festival and what it is like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
+=======
+                    <div className="flex flex-col gap-8 w-full max-w-[700px] mx-4">
+                        <SectionTitle text="Get the experience of BLA SOL from the first line" />
+                        <SectionDescription text="Have you ever wondered what happens behind the scenes at a festival and what it's like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
+                        <SectionDescription text="Have you ever wondered what happens behind the scenes at a festival and what it's like to be part of it? This is your chance! As a volunteer, you become part of the community that helps bring the festival to life and keeps the experience running smoothly." />
+                    </div>
+>>>>>>> Stashed changes
                 </div>
-                <div className="flex flex-col gap-8">
-                    <SectionTitle text="What we expect? " />
-                    <SectionDescription className="mx-4 md:max-w-[700px]" text="- Your volunteer shift will last between 6 to 10 hours, depending on the role you apply for. In some cases, shifts may be split into multiple time slots. You will receive all relevant information once you have signed up." />
-                    <SectionDescription className="mx-4 md:max-w-[700px]" text="- Please make sure you are available during the times you provide. If your availability changes, let us know as soon as possible. Keep in mind that changes may not always be possible after the schedule has been finalized." />
+                <div className="flex flex-col gap-8 items-center">
+                    <div className="flex flex-col gap-8 w-full max-w-[700px] mx-4">
+                        <SectionTitle text="What we expect?" />
+                        <SectionDescription text="- Your volunteer shift will last between 6 to 10 hours, depending on the role you apply for. In some cases, shifts may be split into multiple time slots. You will receive all relevant information once you have signed up." />
+                        <SectionDescription text="- Please make sure you are available during the times you provide. If your availability changes, let us know as soon as possible. Keep in mind that changes may not always be possible after the schedule has been finalized." />
+                    </div>
                 </div>
-                <div className="flex flex-col gap-8">
-                    <SectionTitle text="What you get in return?" />
-                    <SectionDescription className="mx-4 md:max-w-[700px]" text="- Free drinks through the day.<br />
-                    - According to your working hours we provide 2 to 3 meals throughout the day.<br/>
-                    - Access to the festival before or after your shift." />
+                <div className="flex flex-col gap-8 items-center">
+                    <div className="flex flex-col gap-8 w-full max-w-[700px] mx-4">
+                        <SectionTitle text="What you get in return?" />
+                        <SectionDescription text="- Free drinks through the day.<br />
+            - According to your working hours we provide 2 to 3 meals throughout the day.<br/>
+            - Access to the festival before or after your shift." />
+                    </div>
                 </div>
                 <ButtonLg href="/volunteer#offers" text="Start volunteering" />
             </Stack>
