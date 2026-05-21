@@ -86,7 +86,10 @@ export function Home() {
                                 </span>
                             </h2>
                         </div>
-                        <h2 className="order-2 rounded-[15px] bg-brand-blue/70 px-6 py-3 text-center font-bowlby text-brand-light text-lg shadow-lg">to</h2>
+                        <div className="order-2 flex flex-col items-center gap-10 text-center font-bowlby text-brand-blue text-lg">
+                            <h2 className="-mt-10">Match</h2>
+                            <h2>to</h2>
+                        </div>
                         <div className="relative order-3">
                             <img className="h-[600px]" src="./artist.png" alt="" />
                             <h2 className="absolute inset-0 flex items-center justify-center text-center font-bowlby text-brand-light text-lg">
