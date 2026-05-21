@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Poppins:wght@300;400;500;600;700&display=swap');
-
 @import "tailwindcss";
 
 @keyframes marquee {
@@ -11,14 +10,6 @@
   /* Fonts */
   --font-bowlby: 'Bowlby One', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
-
-  /* Font sizes (old ones) */
-/*  --text-description-sm: clamp(14px, 1.67vw, 34px);  /* 24px Figma */
-/*   --text-description-md: clamp(19px, 2.22vw, 45px);  /* 32px Figma */
-/*   --text-button-md:      clamp(19px, 2.22vw, 45px);  /* 32px Figma */
-/*   --text-button-lg:      clamp(29px, 3.33vw, 65px);  /* 48px Figma */
-/*   --text-heading:        clamp(29px, 3.33vw, 65px);  /* 48px Figma */
-/*   --text-section-title:  clamp(34px, 3.89vw, 76px);  /* 56px Figma */
 
   /* General-purpose font sizes */
   --text-sm:   clamp(16px, 1.11vw, 22px);  /* Figma 16px — floor at 16px */

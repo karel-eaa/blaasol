@@ -11,7 +11,7 @@ export function NavBar({ blue = false, buyTicketsButton = true }) {
                 <NavLink to={"/"}><img src={assetUrl(blue ? "nav-blue.png" : "nav.png")} className="max-h-[100px] w-auto" /></NavLink>
                 <div className="flex gap-[50px] items-center relative">
                     {buyTicketsButton && (
-                        <NavLink to={"/tickets"} className="bg-brand-red text-brand-light font-bowlby py-[9px] px-[18.5px] cursor-pointer text-base">
+                        <NavLink to={"/tickets"} className="bg-brand-red text-brand-light font-bowlby py-[9px] px-[18.5px] cursor-pointer text-base rounded-[15px]">
                             Buy tickets
                         </NavLink>
                     )}
